@@ -28,7 +28,7 @@ const chartData = [
 
 const chartConfig = {
   desktop: {
-    label: "Desktop",
+    label: "Speed",
     color: "hsl(var(--chart-1))",
   },
   mobile: {
@@ -41,8 +41,8 @@ export function Linechart() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Line Chart - Custom Dots</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Line Chart - Average Belt Speed (rpm)</CardTitle>
+        <CardDescription>January - March 2025</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>

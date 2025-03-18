@@ -18,17 +18,17 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 const chartData = [
-  { month: "January", desktop: 186 },
-  { month: "February", desktop: 285 },
-  { month: "March", desktop: 237 },
-  { month: "April", desktop: 203 },
-  { month: "May", desktop: 209 },
-  { month: "June", desktop: 264 },
+  { month: "Monday", desktop: 80 },
+  { month: "Tuesday", desktop: 90 },
+  { month: "Wednesday", desktop: 75 },
+  { month: "Thursday", desktop: 92 },
+  { month: "Friday", desktop: 90 },
+  { month: "Saturday", desktop: 88 },
 ];
 
 const chartConfig = {
   desktop: {
-    label: "Desktop",
+    label: "percent",
     color: "hsl(var(--chart-1))",
   },
 };
@@ -37,9 +37,9 @@ export function Radarchart() {
   return (
     <Card>
       <CardHeader className="items-center pb-4">
-        <CardTitle>Radar Chart - Grid Filled</CardTitle>
+        <CardTitle>Radar Chart - % Belt performance</CardTitle>
         <CardDescription>
-          Showing total visitors for the last 6 months
+          Showing belt perfomance for the last 6 days
         </CardDescription>
       </CardHeader>
       <CardContent className="pb-0">
@@ -64,10 +64,10 @@ export function Radarchart() {
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Trending up by 5.2% this week <TrendingUp className="h-4 w-4" />
         </div>
         <div className="flex items-center gap-2 leading-none text-muted-foreground">
-          January - June 2024
+          March 2025
         </div>
       </CardFooter>
     </Card>
